@@ -133,7 +133,7 @@ if(isset($_POST['order'])){
          </div>
          <div class="inputBox">
             <span>state :</span>
-            <input type="text" name="state" placeholder="e.g. maharashtra" class="box" maxlength="50" required>
+            <input type="text" name="state" placeholder="e.g. SP" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>country :</span>
