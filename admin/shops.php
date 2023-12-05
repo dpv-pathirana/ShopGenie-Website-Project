@@ -124,8 +124,8 @@ if(isset($_GET['delete'])){
             <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
         </div>
          <div class="inputBox">
-            <span>shop details (required)</span>
-            <textarea name="shopdetails" placeholder="enter shop details" class="box" required maxlength="500" cols="30" rows="10"></textarea>
+            <span>shop category (required)</span>
+            <textarea name="shopdetails" placeholder="enter shop category" class="box" required maxlength="500" cols="30" rows="10"></textarea>
          </div>
       </div>
       
