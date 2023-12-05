@@ -165,6 +165,7 @@ if(isset($_GET['delete'])){
       <div class="name"><?= $fetch_products['productname']; ?></div>
       <div class="price">Rs: <span><?= $fetch_products['productprice']; ?></span>/-</div>
       <div class="details"><span><?= $fetch_products['productdetails']; ?></span></div>
+      <div class="details"><span><?= $fetch_products['shopid']; ?></span></div>
       <div class="flex-btn">
          <a href="update_product.php?update=<?= $fetch_products['productid']; ?>" class="option-btn">update</a>
          <a href="products.php?delete=<?= $fetch_products['productid']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>

@@ -36,9 +36,14 @@ if(!isset($admin_id)){
    <div class="box-container">
 
       <div class="box">
-         <h3>welcome!</h3>
-         <p><?= $fetch_profile['name']; ?></p>
-         <a href="update_profile.php" class="btn">update profile</a>
+      <?php
+            $select_shops = $conn->prepare("SELECT * FROM `shops`");
+            $select_shops->execute();
+            $number_of_shops = $select_shops->rowCount()
+         ?>
+         <h3><?= $number_of_shops; ?></h3>
+         <p>shops added</p>
+         <a href="shops.php" class="btn">see shops</a>
       </div>
 
       <div class="box">
