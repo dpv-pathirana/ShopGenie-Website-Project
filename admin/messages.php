@@ -12,8 +12,8 @@ if(!isset($admin_id)){
 
 if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
-   $delete_message = $conn->prepare("DELETE FROM `messages` WHERE id = ?");
-   $delete_message->execute([$delete_id]);
+   $delete_messages = $conn->prepare("DELETE FROM `messages` WHERE id = ?");
+   $delete_messages->execute([$delete_id]);
    header('location:messages.php');
 }
 
