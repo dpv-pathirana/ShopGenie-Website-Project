@@ -36,9 +36,14 @@ if(!isset($admin_id)){
    <div class="box-container">
 
       <div class="box">
-         <h3>welcome!</h3>
-         <p><?= $fetch_profile['name']; ?></p>
-         <a href="update_profile.php" class="btn">update profile</a>
+      <?php
+            $select_shops = $conn->prepare("SELECT * FROM `shops`");
+            $select_shops->execute();
+            $number_of_shops = $select_shops->rowCount()
+         ?>
+         <h3><?= $number_of_shops; ?></h3>
+         <p>shops added</p>
+         <a href="shops.php" class="btn">see shops</a>
       </div>
 
       <div class="box">
@@ -52,7 +57,7 @@ if(!isset($admin_id)){
                }
             }
          ?>
-         <h3><span>Rs: </span><?= $total_pendings; ?><span>/-</span></h3>
+         <h3><span>$</span><?= $total_pendings; ?><span>/-</span></h3>
          <p>total pendings</p>
          <a href="placed_orders.php" class="btn">see orders</a>
       </div>
@@ -68,7 +73,7 @@ if(!isset($admin_id)){
                }
             }
          ?>
-         <h3><span>Rs: </span><?= $total_completes; ?><span>/-</span></h3>
+         <h3><span>$</span><?= $total_completes; ?><span>/-</span></h3>
          <p>completed orders</p>
          <a href="placed_orders.php" class="btn">see orders</a>
       </div>
