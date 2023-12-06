@@ -15,7 +15,7 @@
 
    <section class="flex">
 
-      <a href="home.php" class="logo">ShopGenie</a>
+      <a href="home.php" class="logo">ShopGenie<span>.</span></a>
 
       <nav class="navbar">
          <a href="home.php">Home</a>
