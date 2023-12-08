@@ -43,7 +43,7 @@ if(isset($_SESSION['user_id'])){
 
       <div class="content">
          <h3>why choose us?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis minus et similique doloribus? Harum molestias tenetur eaque illum quas? Obcaecati nulla in itaque modi magnam ipsa molestiae ullam consequuntur.</p>
+         <p>Introduces a website connecting local stores and customers to improve shopping process and satisfaction.Aims to provide easy access to products and prices by uniting all shops in one place.Highlights the fragmented retail market and the advantages of a centralized platform for local businesses.</p>
          <a href="contact.php" class="btn">contact us</a>
       </div>
 
